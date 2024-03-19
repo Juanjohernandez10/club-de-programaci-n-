@@ -48,10 +48,14 @@ while True:
     
     opcionesInt = int(input('especilidad a asistir ->  \n1. odontologia \n2. ginecologia \n3. consultorio general\n4. maternidad \n5. infancia \n6. reporte \n7. finalizar -> '))
     
-    if opcionesInt < 1 and opcionesInt > 6:
+    if opcionesInt < 1 and opcionesInt > 7:
         print('la informacion es invalida ')
     if opcionesInt == 6:
         fnt_registro ()
+    if opcionesInt == 7:
+        fnt_registro ()
+        break
+    
         
     fnt_selection (opcionesInt)
     fnt_limpiar_pantalla ('cls')
